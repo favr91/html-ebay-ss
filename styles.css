@@ -1,0 +1,294 @@
+.grid {
+    font-family: 'Roboto', sans-serif;
+    color: #1F2226;
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 1.5;    
+    margin: auto;    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(11, auto);
+    grid-gap: 10px;
+    grid-template-areas:
+        "h"
+        "f"
+        "c"
+        "i"
+        "a"
+        "b1"
+        "b2"
+        "b3"
+        "b4"
+        "bt1"
+        "bt2"
+        ;       
+}
+
+.boxes {
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid #EBEBEB;
+    padding: 30px;
+}
+
+#descripcion{
+    margin-bottom: 20px;
+}
+
+.cabecera {    
+    grid-area: h;
+    background-color: #ffe4eb;
+    border: 1px solid #F3CAD5;
+    border-radius: 3px;    
+    color: #FF7698;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#tienda-subtitulo {
+    font-size: 14px;
+    color: #FF7698;
+    text-transform: uppercase;
+}
+
+.youtube {
+    width: 100%;
+    height: 40vh;
+}
+
+#video1 {
+    grid-area: v1;
+}
+
+#video2 {
+    grid-area: v2;
+}
+
+#barra-hzt {
+    margin: 0 20px 0 20px;
+    width: 1px;
+    height: 25px;
+    color: #FF7698;
+    border: none;
+    background-color: #FF7698;
+}
+
+.subtitulo {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.foto {
+    grid-area: f;
+    align-self: start;
+    padding: 0 !important;
+}
+
+#modelo {
+    display: block;
+    max-width: 100%;
+}
+
+.txt-aviso {
+    text-align: center;
+    margin: 0;
+}
+
+.txt-aviso-titulo {
+    margin: 0 0 5px 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.txt-contenido-titulo {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.contenido {
+    grid-area: c;
+}
+
+#barra {
+    margin: 20px 0 20px 0;
+    height: 1px;
+    border: none;
+    background-color: #EBEBEB;
+}
+
+#lista-1 {
+    margin: 0;
+    padding-left: 15px;
+}
+
+.lista-info {
+    margin: 0 0 15px 0;
+    padding-left: 15px;
+}
+
+#special-features {
+    margin-bottom: 0;
+}
+
+.info {
+    grid-area: i;
+    padding: 30px;
+}
+
+.aviso {
+    grid-area: a;
+    background-color: #D1ECF1 !important;
+    border: 1px solid #BEE5EB !important;
+    color: #0C5460;
+}
+
+.bullet1 {
+    grid-area: b1;
+}
+
+.bullet2 {
+    grid-area: b2;
+}
+
+.bullet3 {
+    grid-area: b3;
+}
+
+.bullet4 {
+    grid-area: b4;
+}
+
+.titulo-bullet {
+    margin: 15px 0 10px 0;
+}
+
+.icono {
+    color: #FF7698;
+    font-size: 30px;
+}
+
+.metodos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.iconos-pagos {
+    color: #1F2226;
+    font-size: 24px;
+    margin: 15px 15px 0 0;
+    opacity: 50%;
+}
+
+.txt-bullets {
+    margin: 0;
+}
+
+.shipping {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    height: 50px;
+}
+
+.buton {
+    border-radius: 3px;
+    color: #fff;
+    background-color: #FF7698;
+    padding: 12px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+#btn-1{
+    grid-area: bt1;
+}
+
+#btn-2{
+    grid-area: bt2;
+}
+
+#enlace {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, auto);
+        grid-gap: 20px;
+        grid-template-areas:
+            "h h h h h h"
+            ". f f f f ."
+            "c c c c i i"
+            "a a a a a a"
+            "b1 b1 b1 b1 b2 b2"
+            "b3 b3 b4 b4 . .";
+    }
+
+    .txt-contenido-titulo {
+        font-size: 26px;
+    }
+
+    #tienda-subtitulo {
+        font-size: 20px;
+    }
+
+    #logo {
+        height: 80%;
+    }
+
+    #barra-hzt {
+        height: 40px;
+    }
+
+    .youtube {
+        width: 100%;
+        height: 25vh;
+        ;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: auto auto auto minmax(300px, auto) auto;
+        grid-gap: 20px;
+        grid-template-areas:
+            "h h h h h h h h h h"
+            "f f f f c c c c i i"
+            "a a a a a a a a a a"
+            "b1 b1 b1 b1 b2 b2 b3 b3 b4 b4"
+            ". . bt1 bt1 bt1 bt2 bt2 bt2 . .";           
+    }
+
+    .txt-contenido-titulo {
+        font-size: 26px;
+    }
+
+    #tienda-subtitulo {
+        font-size: 20px;
+    }
+
+    #logo {
+        height: 90%;
+    }
+
+    #barra-hzt {
+        height: 40px;
+    }
+}
