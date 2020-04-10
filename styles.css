@@ -266,14 +266,13 @@
 @media only screen and (min-width: 992px) {
     .grid {
         grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: auto auto auto minmax(300px, auto) auto;
+        grid-template-rows: auto auto auto auto;
         grid-gap: 20px;
         grid-template-areas:
             "h h h h h h h h h h"
             "f f f f c c c c i i"
             "a a a a a a a a a a"
-            "b1 b1 b1 b1 b2 b2 b3 b3 b4 b4"
-            ". . bt1 bt1 bt1 bt2 bt2 bt2 . .";           
+            "b1 b1 b1 b1 b2 b2 b3 b3 b4 b4";           
     }
 
     .txt-contenido-titulo {
