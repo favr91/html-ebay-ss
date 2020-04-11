@@ -18,10 +18,9 @@
         "b1"
         "b2"
         "b3"
-        "b4"
-        "bt1"
-        "bt2"
-        ;       
+        "b4"        
+        "vd1"
+        "vd2";       
 }
 
 .boxes {
@@ -55,14 +54,6 @@
 .youtube {
     width: 100%;
     height: 40vh;
-}
-
-#video1 {
-    grid-area: v1;
-}
-
-#video2 {
-    grid-area: v2;
 }
 
 #barra-hzt {
@@ -234,7 +225,7 @@
 }
 
 .thumbnail{
-width: 100%;
+    width: 100%;
 }
 
 .play-btn{
@@ -243,13 +234,11 @@ width: 100%;
     justify-content: center;
     height: 68px;
     width: 68px;
-    background-color: #4A4A4A;
-    opacity: 80%;
+    background-color: #ff0000;
     border-radius: 12px;
     position: absolute;
     z-index: 1000;
     border-radius: 50%;
-    transition: all .20s ease;
 }
 
 .enlace{
@@ -258,15 +247,6 @@ width: 100%;
     justify-content: center;
     align-items: center;
 }
-
-.enlace:hover > .play-btn {
-    background-color: #ff0000;
-    opacity: 1;    
-}
-
-/* .enlace .play-btn:hover {
-    
-} */
 
 .icono-ytb{
     color: white;
@@ -284,7 +264,7 @@ width: 100%;
 @media only screen and (min-width: 768px) {
     .grid {
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(6, auto);
+        grid-template-rows: repeat(7, auto);
         grid-gap: 20px;
         grid-template-areas:
             "h h h h h h"
@@ -292,7 +272,8 @@ width: 100%;
             "c c c c i i"
             "a a a a a a"
             "b1 b1 b1 b1 b2 b2"
-            "b3 b3 b4 b4 . .";
+            "b3 b3 b4 b4 . ."
+            "vd1 vd1 vd1 vd2 vd2 vd2";
     }
 
     .txt-contenido-titulo {
@@ -340,5 +321,15 @@ width: 100%;
 
     #barra-hzt {
         height: 40px;
+    }
+    .play-btn{        
+        background-color: #4A4A4A;
+        opacity: 80%;
+        z-index: 1000;
+        transition: all .20s ease;
+    }
+    .enlace:hover > .play-btn {
+        background-color: #ff0000;
+        opacity: 1;    
     }
 }
