@@ -311,6 +311,12 @@
     width: 100%;
 }
 
+.tips-imgs{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 .play-btn{
     display: flex;
     align-items: center;
@@ -426,7 +432,7 @@ tr:not(:first-child):hover {
 
     .tips-imgs {
         margin-top: 20px;
-        flex-wrap: nowrap;
+        /* flex-wrap: nowrap; */
     }
 
     .margen{
@@ -438,6 +444,7 @@ tr:not(:first-child):hover {
 }
 
 @media only screen and (min-width: 992px) {
+
     .grid {
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(6, auto);
@@ -488,13 +495,10 @@ tr:not(:first-child):hover {
         display: unset;
     }
 
-    .tip-img {    
-        width: 100%;
-    }
-
-    .tips-imgs{
-        display: flex;
-
+    .tips-imgs {
+        flex: 100%;
+        max-width: 100%;
+        flex-wrap: nowrap;
     }
 
     #tienda-subtitulo {
