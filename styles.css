@@ -56,6 +56,10 @@
     line-height: 1.2rem;
 }
 
+.silueta {
+    width: 50%;
+}
+
 .grid-categorias__titulo{
     grid-area: gct;
     font-size: 1.5rem;
@@ -374,6 +378,9 @@ th, td {
     font-size: 0.875rem;
 }
 
+tr:not(:first-child){
+    transition: all .15s;
+}
 tr:not(:first-child):hover {
     background: #1f222615;
 }
